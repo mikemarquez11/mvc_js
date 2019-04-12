@@ -133,11 +133,10 @@
     };
 
     const resetController = (id) => {
-        // ..... introducir código
+        localStorage.quizzes = initial_quizzes;
         let quizzes = JSON.parse(localStorage.quizzes);
-        console.log(quizzes);
+        indexController();
     };
-
 
     // ROUTER
 
